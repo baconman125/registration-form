@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding: 0;
+    
+}
+:root {
+    --white-color: #fff;
+    --text-color: #b9b9b9;
+    --background-color: #000;
+    --btn-color: #78d823;
+    --input-border-color: #e5e7eb;
+  }
+  
+  html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+.photo-section{
+    background: url(./img/background.jpg);
+    width:min(80rem,100%);
+    position: relative;
+    height: 100vh;
+    background-size:cover;
+    background-position: center;
+    padding: 2em 0;
+}
+#credit{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 2%;
+    color: white;
+}
+.whole-wrapper{
+    display:flex;
+    flex-direction: row;
+}
+.credit-link{
+    color:white;
+}
+.container{
+    color: var(--background-color);
+    width: 70%;
+    min-height: 100vh;
+    background-color: var(--white-color);
+    line-height: 2.4rem;
+    padding: 10vh 5vh;
+    font-size: 2rem;
+    
+}
+.description >p,
+.description >h2
+{
+    margin-bottom: 3rem;
+    font-weight: bold;
+    
+}
+form{
+    font-weight: bold;
+    margin:4rem auto;
+    display:flex;
+    gap:2rem;
+    flex-direction: column;
+}
+.form-action{
+    display:flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+form label{
+    color: gray;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+form input {
+    font-size: 1.8rem;
+    border: 2px solid var(--input-border-color);
+    padding: 0.5em;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 1rem;
+    -webkit-appearance: none;
+    font-size: 2rem;
+    padding: 0.5em 2em;
+    background-color: #336600;
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
+    max-width: 50%;
+}
+button:hover{
+    background-color: var(--btn-color);
+    color: var(--background-color);
+}
+.container a{
+    color: #336600;
+    text-decoration: none;
+}
+form {
+    margin: 4rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+input:valid{
+    border-color:green;
+}
+input:invalid{
+    border-color: red;
+}
