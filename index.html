@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=K2D:wght@100&family=Quintessential&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="whole-wrapper">
+        <div class="photo-section">
+            <div id="credit">Photo By Halie West on <a class="credit-link" href="https://unsplash.com/photos/25xggax4bSA" target="_blank">Unsplash</a></div>
+        </div>
+        <div class="container">
+            <div class="description">
+                <p>
+                  This is not a real online service! You know you need something like
+                  this in your live to help you realize your deeepest dreams.<br />
+                  Sign up <em>now</em> to get started.
+                </p>
+                <p>You <em>know</em> you want to.</p>
+                <h2>Let's do this !</h2>
+            </div>
+            <form action ="" method="post">
+                <div class="form-action">
+                    <label for="first-name">FIRST NAME </label>
+                    <input type="text" placeholder="John" id="first-name" required />
+                  </div>
+                <div class="form-action">
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text"placeholder="Doe"id="last-name" required />
+                  </div>
+                <div class="form-action">
+                    <label for="email ">EMAIL</label>
+                    <input type="email" placeholder="bob@gmail.com" id="email" required />
+                </div>
+                <div class="form-action">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" id="phone" placeholder="123-456-7890" minlength="10" required/>
+                </div>
+                <div class="form-action">
+                    <label for="pwd">PASSWORD</label>
+                    <input type="password"placeholder="Passwords Must Match" id="pwd" required />
+                </div>
+                <div class="form-action">
+                    <label for="confirm-pwd">CONFIRM PASSWORD</label>
+                    <input type="password"placeholder="Passwords Must Match" id="confirm-pwd" required />
+                </div>
+                <div class="form-action">
+                    <button type="submit">Create Account</button>
+                </div>
+            </form>
+            <p>Already have an account ? <a href="#">Log in</a></p>
+        </div>
+    </div>
+    
+</body>
+</html>
